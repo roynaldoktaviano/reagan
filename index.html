@@ -24,6 +24,7 @@
         font-family: Daydream;
       }
 
+
       @keyframes marquee {
         from {
           transform: translateX(0);
@@ -104,6 +105,44 @@
         animation: gerakKananKiri 6s infinite ease-in-out;
       }
 
+      @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.spin-loop {
+  animation:
+    spin 8s linear infinite,
+    blink 1s ease-in-out infinite;
+}
+
+@keyframes pulses {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* bisa ubah ke 1.05 kalau mau lebih halus */
+  }
+}
+
+.pulse-image {
+  display: inline-block;
+  animation: pulses 1.5s ease-in-out infinite;
+  transform-origin: center center;
+}
       .animasi-atas {
         display: block;
         animation: gerakAtas 6s infinite ease-in-out;
@@ -198,7 +237,7 @@
           <img
             src="./images/bunny.png"
             alt=""
-            class="w-[25vw]  lg:mb-[10vw] lg:w-[20vw]"
+            class="w-[25vw]  lg:mb-[10vw] lg:w-[20vw] pulse-image"
           />
         </div>
       </div>
@@ -247,7 +286,7 @@
             <img
               src="./images/sun.png"
               alt=""
-              class="w-[20vw] mt-5 mr-[3vw]  lg:w-[20vw] mx-auto"
+              class="w-[20vw] mt-5 mr-[3vw]  lg:w-[20vw] mx-auto spin-loop"
             />
           </div>
         </div>
@@ -261,14 +300,14 @@
             <img
               src="./images/sun.png"
               alt=""
-              class="w-[20vw] mt-5 ml-[-5vw] lg:w-[20vw] mx-auto mb-auto"
+              class="w-[20vw] mt-5 ml-[-5vw] lg:w-[20vw] mx-auto mb-auto spin-loop"
             />
           </div>
           <div class="text-center">
             <img
               src="./images/mid.png"
               alt=""
-              class="w-[50vw] mb-[14vw]  mt-5 lg:w-[10vw] mx-auto"
+              class="w-[50vw] mb-[14vw]  mt-5 lg:w-[10vw] mx-auto animasi-gerak"
             />
             <!-- <p
               class="text-[6vw] mt-3 lg:text-[2vw] text-[#985dbd] lilita text-center"
@@ -281,15 +320,17 @@
             <img
               src="./images/sun.png"
               alt=""
-              class="w-[20vw] mt-5 mr-[-3vw]  lg:w-[20vw] mx-auto"
+              class="w-[20vw] mt-5 mr-[-3vw]  lg:w-[20vw] mx-auto spin-loop"
             />
           </div>
         </div>
       </div>
 
 
-      <div
-        class="grid grid-cols-2 gap-x-[10vw] lg:gap-x-[4vw] gap-y-[4vw] lg:px-0 px-[20vw] mt-[8vw]"
+      <div class="flex align-center justify-between">
+        <img src="./images/baludara.png" alt="" class="w-[20vw] object-contain animasi-bawah">
+        <div
+        class="grid grid-cols-2 w-[60vw] gap-x-[10vw] lg:gap-x-[4vw] gap-y-[4vw] lg:px-0 mt-[8vw]"
       >
         <div class="text-center">
           <div
@@ -324,6 +365,8 @@
           <p class="text-[#f8afaf] text-[5vw] lg:text-[2vw] fredoka">Second</p>
         </div>
       </div>
+      <img src="./images/sun.png" alt="" class="w-[20vw] object-contain spin-loop">
+      </div>
 
       <!-- <div class="flex max-w-[600px] items-center py-[3vw]">
         <img
@@ -345,7 +388,7 @@
 
       <div class="flex justify-between items-center mt-[10vw]">
         <div>
-          <img src="./images/sun.png" alt="" class="w-[25vw] ml-[-5vw] lg:w-[20vw]" />
+          <img src="./images/sun.png" alt="" class="w-[25vw] ml-[-5vw] lg:w-[20vw] spin-loop" />
         </div>
         <div class="text-center">
           <p class="text-[#f8afaf] text-[6vw] lg:text-[2vw] fredoka">Sunday</p>
@@ -359,7 +402,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/balonn.png" alt="" class="w-[25vw] lg:w-[20vw]" />
+          <img src="./images/balonn.png" alt="" class="w-[25vw] lg:w-[20vw] animasi-bawah" />
         </div>
       </div>
       <img
