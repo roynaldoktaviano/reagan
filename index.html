@@ -7,12 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+
       @theme {
         --color-clifford: #da373d;
       }
@@ -50,6 +51,12 @@
       .fredoka {
         font-family: "Fredoka", sans-serif;
         font-weight: bold;
+      }
+
+      .rye {
+        font-family: "Rye", serif;
+        font-weight: 400;
+        font-style: normal;
       }
 
       .lilita {
@@ -134,7 +141,7 @@
 .spin-loop {
   animation:
     spin 8s linear infinite,
-    blink 1s ease-in-out infinite;
+    blink 0s ease-in-out infinite;
 }
 
 @keyframes pulses {
@@ -189,7 +196,7 @@
         class="w-full h-screen bg-[url('./images/star.png')] absolute z-10"
       ></div> -->
       <video autoplay muted playsinline class="absolute w-full h-screen object-cover z-0">
-        <source src="./images/vid2.mp4" type="video/mp4" />
+        <source src="./images/reagan.mp4" type="video/mp4" />
         Browser kamu tidak mendukung video HTML5.
       </video>
       
@@ -220,7 +227,7 @@
           </p> -->
 
           <button
-            class="bg-[#fcdae5] px-5 py-2 cursor-pointer mt-[135vw] text-[3.5vw] light lg:text-[2vw] mx-auto lilita text-[#b5663e] rounded-[8px]"
+            class="bg-[#b35a44] px-5 py-2 cursor-pointer mt-[155vw] text-[6vw] light lg:text-[2vw] mx-auto lilita text-white rounded-[20px]"
           >
             Open Invitation
           </button>
@@ -229,11 +236,11 @@
     </div>
 
     <!-- Content Isi -->
-    <div class="overflow-x-hidden hidden content ">
+    <div class="overflow-x-hidden hidden content bg-[#f6e8d1] ">
       <div class="flex justify-between items-top">
         <div>
           <img
-            src="./images/kiri.png"
+            src="./images/rodeo1.png"
             alt=""
             class="w-[45vw] lg:w-[20vw] "
           />
@@ -243,192 +250,95 @@
         </div>
         <div>
           <img
-            src="./images/kanan.png"
+            src="./images/rodeo2.png"
             alt=""
             class="w-[45vw] lg:mb-[10vw] lg:w-[20vw]"
           />
         </div>
+      </div>  
+
+      <div class="flex justify-between items-center px-[3vw]">
+        <img src="./images/rodeo3.png" alt="" class="w-[15vw] mx-auto object-contain spin-loop">
+        <img src="./images/reagan-utama.png" alt="" class="w-[60vw] mx-auto object-contain">
+        <img src="./images/rodarodeo.png" alt="" class="w-[15vw] mt-[40vw] mx-auto object-contain spin-loop">
+
       </div>
-
-      <img src="./images/join.png" alt="" class="w-[50vw] mx-auto object-contain">
-
+      <p
+      class="text-[6vw] font-bold rye lg:text-[4vw] text-[#a74825] mt-[9vw] text-center breath lg:mb-[-5vw] mb-[5vw]"
+    >
+    REAGAN LOUIS NIKOYAMA
+    </p>
       <div class="flex justify-between items-center">
         <div>
-        <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image">
-        <img src="./images/wan.png" alt="" class="w-[20vw] mx-auto object-contain mt-[5vw]">
-        <img src="./images/bung.png" alt="" class="w-[10vw] mx-auto object-contain mt-[10vw] spin-loop ml-[-5vw]">
+        <!-- <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image"> -->
+        <img src="./images/rodeo_poster.png" alt="" class="w-[25vw] mx-auto object-contain mt-[5vw]">
+        <!-- <img src="./images/bung.png" alt="" class="w-[10vw] mx-auto object-contain mt-[10vw] spin-loop ml-[-5vw]"> -->
         </div>
-        <img src="./images/kittyy.png" alt="" class="w-[50vw] mx-auto object-contain">
         <div>
-          <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image">
-          <img src="./images/wan.png" alt="" class="w-[17vw] mx-auto object-contain mt-[5vw]">
-          <img src="./images/bung.png" alt="" class="w-[12vw] mx-auto object-contain mt-[15vw] spin-loop ml-[15vw]">
+          <img src="./images/isturning.png" alt="" class="w-[35vw] mx-auto object-contain">
+        <img src="./images/popsatu.gif" alt="" class="w-[30vw] mx-auto object-contain">
+        </div>
+        <div>
+          <!-- <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image"> -->
+          <img src="./images/rodeo_kuda.png" alt="" class="w-[20vw] mx-auto object-contain mt-[5vw]">
+          <!-- <img src="./images/bung.png" alt="" class="w-[12vw] mx-auto object-contain mt-[15vw] spin-loop ml-[15vw]"> -->
         </div>
       </div>
-
-      <div class="overflow-x-hidden">
-        <p
-          class="text-[7vw] lg:text-[4vw] text-[#f72489] mt-[9vw] text-center breath lg:mb-[-5vw] mb-[-2vw]"
-        >
-        Chanel Hailey Mcqueen
-        </p>
+      <img src="./images/rodeo_mid.png" alt="" class="w-[70vw] mx-auto object-contain mt-[5vw]">
    
-        <p
-          class="text-[#f72489] text-[5vw] lg:text-[2vw] text-center font-serif mt-[4vw] font-light"
-        >
-          IS TURNING
-        </p>
-
-        <div
-          class="flex justify-center items-center relative overflow-x-hidden overflow-y-hidden"
-        >
-          <div class="absolute left-0">
-            <img
-              src="./images/blink.png"
-              alt=""
-              class="w-[10vw] mt-5  lg:w-[20vw] mx-auto "
-            />
-            <img
-              src="./images/bung.png"
-              alt=""
-              class="w-[15vw] mt-5 mb-[20vw] ml-[16vw] spin-loop lg:w-[20vw] mx-auto"
-            />
-          </div>
-          <div class="text-center">
-            <img
-              src="./images/5.png"
-              alt=""
-              class="w-[16vw] mb-[14vw] mt-5 lg:w-[10vw] mx-auto"
-            />
-            <!-- <p
-              class="text-[6vw] mt-3 lg:text-[2vw] text-[#985dbd] lilita text-center"
-            >
-              Come and Join Us to <br />
-              Ralinka's Birthday Party
-            </p> -->
-          </div>
-          <div class="absolute right-0">
-            <img
-            src="./images/bung.png"
-            alt=""
-            class="w-[15vw] mt-5   mr-[16vw] spin-loop lg:w-[20vw] mx-auto"
-          />
-            <img
-            src="./images/blink.png"
-            alt=""
-            class="w-[12vw] mt-5  lg:w-[20vw] mx-auto "
-          />
-          <img
-            src="./images/bung.png"
-            alt=""
-            class="w-[11vw] mt-5 mr-[10vw] spin-loop lg:w-[20vw] mx-auto"
-          />
-          </div>
-        </div>
-      </div>
 
 
-      <div
-          class="flex justify-between align-center relative overflow-x-hidden overflow-y-hidden"
-        >
-          <div class="absolute left-0 top-0 bottom-0">
-            <img
-              src="./images/bung.png"
-              alt=""
-              class="w-[20vw] mt-5 mr-[10vw] spin-loop lg:w-[20vw] mx-auto"
-            />
-            <img
-            src="./images/blink.png"
-            alt=""
-            class="w-[6vw] mt-5  lg:w-[20vw] mx-auto "
-            />
-            <img
-            src="./images/wan.png"
-            alt=""
-            class="w-[18vw] mt-5  lg:w-[20vw] mx-auto "
-            />
-          </div>
-          <div class="text-center">
-            <img
-              src="./images/bln.png"
-              alt=""
-              class="w-[50vw] mb-[14vw]  mt-5 lg:w-[10vw] mx-auto animasi-gerak"
-            />
-            <!-- <p
-              class="text-[6vw] mt-3 lg:text-[2vw] text-[#985dbd] lilita text-center"
-            >
-              Come and Join Us to <br />
-              Ralinka's Birthday Party
-            </p> -->
-          </div>
-          <div class="absolute right-0 bottom-0">
-            <img
-            src="./images/wan.png"
-            alt=""
-            class="w-[22vw] mt-5  lg:w-[20vw] mx-auto "
-            />
-            <img
-            src="./images/blink.png"
-            alt=""
-            class="w-[8vw] mt-5  lg:w-[20vw] mx-auto "
-            />
-            
-            <img
-              src="./images/bung.png"
-              alt=""
-              class="w-[12vw] mt-5 mr-[10vw] spin-loop lg:w-[20vw] mx-auto"
-            />
-          </div>
-        </div>
-      </div>
-
+     
 
       <div class="flex align-center justify-between">
-        <img src="./images/bln2.png" alt="" class="w-[20vw] object-contain animasi-bawah">
+        <img src="./images/rodeo_koboy.png" alt="" class="w-[20vw] object-contain animasi-bawah">
         <div
         class="grid grid-cols-2 w-[60vw] gap-x-[10vw] lg:gap-x-[4vw] gap-y-[4vw] lg:px-0 mt-[8vw]"
       >
         <div class="text-center">
+          <div class="relative">
+            <img src="./images/rodeo_serif.png" alt="" class="w-[14vw] object-contain absolute left-0 mt-[-5vw] ml-[-3vw]">
           <div
-            class="bg-[#e37491] text-white text-[6vw] lg:text-[2vw] lilita rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
+            class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] lilita rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
             5
           </div>
-          <p class="text-[#e37491] text-[5vw] lg:text-[2vw] fredoka">Days</p>
+          </div>
+          <p class="text-[#a74825] rye text-[5vw] lg:text-[2vw] fredoka">Days</p>
         </div>
         <div class="text-center">
           <div class="relative">
-            <img src="./images/nyn.png" alt="" class="w-[14vw] object-contain absolute right-0 mt-[-9vw] mr-[-2vw]">
+            
             <div
-            class="bg-[#e37491] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
+            class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
             5
           </div>
           
           </div>
-          <p class="text-[#e37491] text-[5vw] lg:text-[2vw] fredoka">Hours</p>
+          <p class="text-[#a74825] rye text-[5vw] lg:text-[2vw] fredoka">Hours</p>
         </div>
         <div class="text-center">
           <div class="relative">
             <div
-            class="bg-[#e37491] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
+            class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
             5
           </div>
           <img src="./images/nyn2.png" alt="" class="w-[10vw] object-contain absolute left-0 top-0 ml-[-2vw]">
           </div>
-          <p class="text-[#e37491] text-[5vw] lg:text-[2vw] fredoka">Minutes</p>
+          <p class="text-[#a74825] rye text-[5vw] lg:text-[2vw] fredoka">Minutes</p>
         </div>
         <div class="text-center">
           <div
-            class="bg-[#e37491] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
+            class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
             5
           </div>
-          <p class="text-[#e37491] text-[5vw] lg:text-[2vw] fredoka">Second</p>
+          <p class="text-[#a74825] rye text-[5vw] lg:text-[2vw] fredoka">Second</p>
         </div>
       </div>
-      <img src="./images/bung.png" alt="" class="w-[17vw] object-contain spin-loop">
+      <img src="./images/gitar.png" alt="" class="w-[17vw] object-contain spin-loop">
       </div>
 
       <!-- <div class="flex max-w-[600px] items-center py-[3vw]">
@@ -449,85 +359,65 @@
         />
       </div> -->
 
-      <div class="flex justify-between items-center mt-[10vw]">
-        <div>
+      <div class="flex justify-between items-center mt-[10vw] relative">
+        <!-- <div>
           <img src="./images/bung.png" alt="" class="w-[20vw] object-contain spin-loop">
-        </div>
-        <div class="text-center">
-          <p class="text-[#f72489] text-[6vw] lg:text-[2vw] lilita">Saturday</p>
-          <div class="flex items-center gap-[5vw]">
-            <p class="text-[#f72489] text-[6vw] lg:text-[2vw] lilita">July</p>
-            <p class="text-[#f56e8e] text-[12vw] lg:text-[2vw] lilita">19</p>
-            <p class="text-[#f72489] text-[6vw] lg:text-[2vw] lilita">2025</p>
+        </div> -->
+        <div class="text-center w-full">
+          <p class="text-[#c56b33] text-[6vw] lg:text-[2vw] rye">SATURDAY</p>
+          <div class="flex items-center gap-[5vw] w-full place-content-center">
+            <p class="text-[#c56b33] text-[5vw] lg:text-[2vw] rye">SEPTEMBER</p>
+            <p class="text-[#7a3f1e] text-[8vw] lg:text-[2vw] rye">20</p>
+            <p class="text-[#c56b33] text-[5vw] lg:text-[2vw] rye">2025</p>
           </div>
-          <p class="text-[#f72489] text-[8vw] lg:text-[2vw] lilita">
-            at 11.00 WIB
+          <p class="text-[#c56b33] text-[5vw] lg:text-[2vw] rye">
+            at 10.30 WIB
           </p>
         </div>
-        <div>
-          <img src="./images/bung.png" alt="" class="w-[15vw] lg:w-[20vw] spin-loop" />
+        <div class="absolute right-0">
+          <img src="./images/rodeo_kn.png" alt="" class="w-[15vw] lg:w-[20vw] animasi-bawah" />
         </div>
       </div>
       <img
-        src="./images/locpink.png"
+        src="./images/loc.png"
         alt=""
         class="w-[4vw] mt-[7vw] mx-auto lg:w-[5vw]"
       />
-      <div class="text-center">
-        <!-- <p class="text-[#975daf] text-[8vw] lg:text-[2vw] fredoka">
-          Ralinka’s Home
-        </p> -->
-        <p class="text-[#f72489] text-[5vw] lg:text-[2vw] lilita">
-          McDonald’s Tentara Pelajar Semarang
-        </p>
+      <div class="flex justify-between items-center">
+        <div class="w-[30vw]">
+          <img src="./images/rodeo_sepatu.png" alt="" class="w-[15vw] lg:w-[20vw] spin-loop" />
+        </div>
+        <div class="text-center">
+          <!-- <p class="text-[#975daf] text-[8vw] lg:text-[2vw] fredoka">
+            Ralinka’s Home
+          </p> -->
+          <p class="text-[#683201] text-[6vw] rye lg:text-[2vw] lilita">
+            Mes Amis 
+          </p>
+          <p class="text-[#b36539] text-[3.5vw] rye lg:text-[2vw] lilita">
+            Jalan Metro Pondok Indah No.53, Pondok Indah, Kec. Kby Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310
+          </p>
+        </div>
+        <div class="w-[30vw]">
+          <!-- <img src="./images/rodeo_kn.png" alt="" class="w-[15vw] lg:w-[20vw] animasi-bawah" /> -->
+        </div>
       </div>
 
-      <div class="flex w-full justify-between mt-[6vw] lg:mt-[1vw] text-center mb-[2vw] items-center ">
-        <div>
-          <img
-            src="./images/blink.png"
-            alt=""
-            class="w-[10vw] ml-[10vw] lg:w-[20vw] mx-auto"
-          />
-          <img
-          src="./images/bung.png"
-          alt=""
-          class="w-[18vw] ml-[-6vw] spin-loop lg:w-[20vw] mx-auto"
-        />
-        </div>
+      <div class="flex w-full justify-center mt-[6vw] lg:mt-[3vw] text-center mb-[2vw] items-center ">
+       
         <div class="w-[50vw]">
           <a
             href="https://maps.app.goo.gl/98Vj7VkE7UAgJfiV6?g_st=iwb"
             target="_blank"
-            class="bg-[#f72489] text-black text-center mx-auto px-7 py-3 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto fredoka text-white rounded-full"
+            class="bg-[#a74825] text-black text-center mx-auto px-7 py-3 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto rye text-white rounded-full"
           >
             See Location
           </a>
           
         </div>
-        <!-- <div style="margin-left: -34px;
-    margin-top: -27px;">
-          <img
-            src="./images/nyantol.png"
-            alt=""
-            class="w-[10vw] lg:w-[20vw] mr-auto"
-          />
-        </div> -->
-        <div class="w-[18vw]">
-          <img
-          src="./images/knn.png"
-          alt=""
-          class="w-[18vw] lg:w-[20vw] mx-auto animasi-bawah"
-        />
-        </div>
       </div>
-      <p class="text-[#f72489] text-center mt-[-7vw] text-[6vw] lg:text-[2vw] lilita">
-        Dresscode: White
-      </p>
-      <p class="text-[#f72489] text-center text-[6vw] lg:text-[2vw] lilita">
-        Let’s have fun together!
-      </p>
-      <div class="text-center">
+    
+      <div class="text-center mt-[12vw]">
         <!-- <p class="text-[#e17b7b] text-ce text-[8vw] lg:text-[2vw] fredoka">Blessed Parents:</p>
         <p class="text-[#f8afaf] text-[6vw] lg:text-[2vw] fredoka">
           Moh. Jodhy Setiawan Umar 
@@ -535,43 +425,18 @@
         <p class="text-[#f8afaf] text-[6vw] lg:text-[2vw] fredoka mb-[5vw]">
           Nawira Rahmanda
         </p> -->
-        <div class="flex justify-center items-center mb-[5vw]">
-          <img
-          src="./images/wan.png"
+        <img
+          src="./images/rodeo_bawah.png"
           alt=""
-          class="w-[20vw] ml-[-3vw] lg:w-[10vw] mx-auto"
+          class="w-[100vw]  mx-auto"
           />
-          <img
-          src="./images/awn2.png"
-          alt=""
-          class="w-[60vw] lg:w-[10vw] mx-auto animasi-gerak2"
-          />
-          <div class="mt-[20vw]">
-            <img
-            src="./images/blink.png"
-            alt=""
-            class="w-[10vw] lg:w-[10vw] mx-auto"
-            />
-            <img
-            src="./images/bung.png"
-            alt=""
-            class="w-[14vw] mt-[5vw] lg:w-[10vw] mx-auto spin-loop"
-            />
-          </div>
-        </div>
         <!-- <p class="text-[#ba7be1] text-[5vw] lg:text-[1vw] fredoka">
           Blessed Parents: <br />Fauzan & Ira
         </p> -->
-        <p class="text-[#f72489] mt-3 text-center text-[6vw] lg:text-[2vw] lilita">
-          with love,
-        </p>
-        <p class="text-[#f72489] text-center text-[10vw] lg:text-[2vw] breath">
-          Chanel
-        </p>
       </div>
 
-      <div class="w-full overflow-hidden py-4 relative">
-        <p class="text-[#f72489] ml-[2vw] text-[7vw] mb-[2vw] lg:text-[2vw] lilita">
+      <div class="w-full overflow-hidden py-4 relative mt-[8vw]">
+        <p class="text-[#c56b33] ml-[2vw] text-[7vw] mb-[2vw] lg:text-[2vw] lilita">
           Gallery :
         </p>
         <div class="flex gap-5 animate-marquee">
@@ -605,6 +470,16 @@
             src="./images/6.jpeg"
             alt="Image 6"
           />
+          <img
+            class="w-52 object-cover rounded-lg"
+            src="./images/7.jpeg"
+            alt="Image 6"
+          />
+          <img
+            class="w-52 object-cover rounded-lg"
+            src="./images/8.jpeg"
+            alt="Image 6"
+          />
         </div>
       </div>
 
@@ -630,7 +505,7 @@
           alt=""
           class="w-full mt-5 lg:w-[20vw] mx-auto"
         /> -->
-      <div class="flex bg-[#e37491] px-[6vw] py-[4vw]">
+      <div class="flex bg-[#a54c1a] px-[6vw] py-[4vw]">
         <form action="">
           <div>
             <p class="text-white text-[8vw] lg:text-[2vw] lilita">Name:</p>
@@ -704,23 +579,40 @@
           </div>
 
           <button
-            class="bg-[#ffa0c8] px-5 py-2 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto lilita text-white rounded-full"
+            class="bg-[#683201] px-5 py-2 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto lilita text-white rounded-full"
           >
             Send
           </button>
         </form>
         <img
-          src="./images/tikus.png"
+          src="./images/rodeo_kaktus.png"
           alt=""
-          class="w-[20vw] mt-auto lg:w-[20vw] object-contain mx-auto"
+          class="w-[24vw] mt-auto lg:w-[20vw] object-contain mx-auto"
         />
       </div>
 
-      <div class="pb-[50vw] pt-[5vw] text-center bg-[url('./images/foot.png')] bg-cover bg-center">
-        <p class="text-[#f72489] text-[4vw] lg:text-[2vw] fredoka">
+      <div class="pt-[5vw] text-center ">
+        <p class="text-[#c56b33] text-[4vw] lg:text-[2vw] rye">
           Created by:
-          <br />Invite You Invitation
+          <br /><span class="text-[#7a3f1e] rye ">Invite You Invitation</span>
         </p>
+        <div class="flex justify-between items-center mt-[10vw]">
+          <img
+          src="./images/rodeo_sapi.png"
+          alt=""
+          class="w-[40vw] mt-auto lg:w-[20vw] ml-[-10vw]  object-contain mx-auto"
+        />
+        <img
+          src="./images/rodeo_tengah.png"
+          alt=""
+          class="w-[20vw] mt-auto lg:w-[20vw] object-contain mx-auto animasi-gerak"
+        />
+        <img
+          src="./images/rodeo_arah.png"
+          alt=""
+          class="w-[40vw] mt-auto mr-[-10vw] lg:w-[20vw] object-contain mx-auto"
+        />
+        </div>
       </div>
     </div>
 
