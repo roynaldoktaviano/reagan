@@ -9,7 +9,8 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
-
+    <meta name="description" content="Hello {{$nama}}, You're Invited to Reagan’s Birthday, see invitation here" />
+    <meta property="og:image" content="{{ asset('template_web/birthday_9/images/1.jpeg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -179,6 +180,10 @@
   <body
     class="overflow-x-hidden overflow-y-hidden max-w-[600px] mx-auto h-screen bg-[url('./images/bgpink.jpg')] bg-cover bg-no-repeat "
   >
+  <audio controls id="musicplayer" control class="fixed bottom-0 left-0 mx-auto w-full mb-5 z-40 ">
+    <source src="{{ asset('project/' . $data->bgmusik) }}" type="audio/mpeg">
+    Sorry, but your browser doesn't support audio.
+</audio>
     <div class="relative cover">
       <!-- <div class="absolute flex justify-between h-screen w-full flex-col z-20">
         <img
@@ -196,7 +201,7 @@
         class="w-full h-screen bg-[url('./images/star.png')] absolute z-10"
       ></div> -->
       <video autoplay muted playsinline class="absolute w-full h-screen object-cover z-0">
-        <source src="./images/reagan.mp4" type="video/mp4" />
+        <source src="{{ asset('template_web/birthday_9/images/reagan.mp4')}}" type="video/mp4" />
         Browser kamu tidak mendukung video HTML5.
       </video>
       
@@ -240,7 +245,7 @@
       <div class="flex justify-between items-top">
         <div>
           <img
-            src="./images/rodeo1.png"
+            src="{{ asset('template_web/birthday_9/images/rodeo1.png')}}"
             alt=""
             class="w-[45vw] lg:w-[20vw] "
           />
@@ -250,7 +255,7 @@
         </div>
         <div>
           <img
-            src="./images/rodeo2.png"
+            src="{{ asset('template_web/birthday_9/images/rodeo2.png')}}"
             alt=""
             class="w-[45vw] lg:mb-[10vw] lg:w-[20vw]"
           />
@@ -258,9 +263,9 @@
       </div>  
 
       <div class="flex justify-between items-center px-[3vw]">
-        <img src="./images/rodeo3.png" alt="" class="w-[15vw] mx-auto object-contain spin-loop">
-        <img src="./images/reagan-utama.png" alt="" class="w-[60vw] mx-auto object-contain">
-        <img src="./images/rodarodeo.png" alt="" class="w-[15vw] mt-[40vw] mx-auto object-contain spin-loop">
+        <img src="{{ asset('template_web/birthday_9/images/rodeo3.png')}}" alt="" class="w-[15vw] mx-auto object-contain spin-loop">
+        <img src="{{ asset('template_web/birthday_9/images/reagan-utama.png')}}" alt="" class="w-[60vw] mx-auto object-contain">
+        <img src="{{ asset('template_web/birthday_9/images/rodarodeo.png')}}" alt="" class="w-[15vw] mt-[40vw] mx-auto object-contain spin-loop">
 
       </div>
       <p
@@ -271,22 +276,22 @@
       <div class="flex justify-between items-center">
         <div>
         <!-- <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image"> -->
-        <img src="./images/rodeo_poster.png" alt="" class="w-[25vw] mx-auto object-contain mt-[5vw] spin-loop">
+        <img src="{{ asset('template_web/birthday_9/images/rodeo_poster.png')}}" alt="" class="w-[25vw] mx-auto object-contain mt-[5vw] spin-loop">
         <!-- <img src="./images/bung.png" alt="" class="w-[10vw] mx-auto object-contain mt-[10vw] spin-loop ml-[-5vw]"> -->
         </div>
         <div>
-          <img src="./images/isturning.png" alt="" class="w-[35vw] mx-auto object-contain">
-        <img src="./images/popsatu.gif" alt="" class="w-[30vw] mx-auto object-contain">
+          <img src="{{ asset('template_web/birthday_9/images/isturning.png')}}" alt="" class="w-[35vw] mx-auto object-contain">
+        <img src="{{ asset('template_web/birthday_9/images/popsatu.png')}}" alt="" class="w-[30vw] mx-auto object-contain">
         </div>
         <div>
           <!-- <img src="./images/blink.png" alt="" class="w-[10vw] mx-auto object-contain pulse-image"> -->
-          <img src="./images/rodeo_kuda.png" alt="" class="w-[20vw] mx-auto object-contain mt-[5vw] spin-loop">
+          <img src="{{ asset('template_web/birthday_9/images/rodeo_kuda.png')}}" alt="" class="w-[20vw] mx-auto object-contain mt-[5vw] spin-loop">
           <!-- <img src="./images/bung.png" alt="" class="w-[12vw] mx-auto object-contain mt-[15vw] spin-loop ml-[15vw]"> -->
         </div>
       </div>
       <div class="flex flex-row mb-[6vw]">
-        <img src="./images/rodeo_owl.png" alt="" class="w-[30vw] mx-auto object-contain mt-[5vw]">
-        <img src="./images/rodeo_kd.png" alt="" class="w-[30vw] mx-auto object-contain mt-[5vw] animasi-gerak">
+        <img src="{{ asset('template_web/birthday_9/images/rodeo_owl.png')}}" alt="" class="w-[30vw] mx-auto object-contain mt-[5vw]">
+        <img src="{{ asset('template_web/birthday_9/images/rodeo_kd.png')}}" alt="" class="w-[30vw] mx-auto object-contain mt-[5vw] animasi-gerak">
 
       </div>
    
@@ -295,13 +300,13 @@
      
 
       <div class="flex align-center justify-between">
-        <img src="./images/rodeo_koboy.png" alt="" class="w-[20vw] object-contain animasi-bawah">
+        <img src="{{ asset('template_web/birthday_9/images/rodeo_koboy.png')}}" alt="" class="w-[20vw] object-contain animasi-bawah">
         <div
         class="grid grid-cols-2 w-[60vw] gap-x-[10vw] lg:gap-x-[4vw] gap-y-[4vw] lg:px-0 mt-[8vw]"
       >
         <div class="text-center">
           <div class="relative">
-            <img src="./images/rodeo_serif.png" alt="" class="w-[14vw] object-contain absolute left-0 mt-[-5vw] ml-[-3vw]">
+            <img src="{{ asset('template_web/birthday_9/images/rodeo_serif.png')}}" alt="" class="w-[14vw] object-contain absolute left-0 mt-[-5vw] ml-[-3vw]">
           <div
             class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] lilita rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
@@ -334,7 +339,7 @@
         </div>
         <div class="text-center">
           <div class="relative">
-            <img src="./images/rodeo_kecilkaktus.png" alt="" class="w-[10vw] object-contain absolute right-0 top-0 mr-[-4vw] mt-[-3vw]">
+            <img src="{{ asset('template_web/birthday_9/images/rodeo_kecilkaktus.png')}}" alt="" class="w-[10vw] object-contain absolute right-0 top-0 mr-[-4vw] mt-[-3vw]">
           <div
             class="bg-[#a74825] text-white text-[6vw] lg:text-[2vw] fredoka rounded-full lg:px-[2vw] px-[10vw] text-center py-[2vw]"
           >
@@ -344,7 +349,7 @@
           <p class="text-[#a74825] rye text-[5vw] lg:text-[2vw] fredoka">Second</p>
         </div>
       </div>
-      <img src="./images/gitar.png" alt="" class="w-[12vw] object-contain spin-loop">
+      <img src="{{ asset('template_web/birthday_9/images/gitar.png')}}" alt="" class="w-[12vw] object-contain spin-loop">
       </div>
 
       <!-- <div class="flex max-w-[600px] items-center py-[3vw]">
@@ -381,17 +386,17 @@
           </p>
         </div>
         <div class="absolute right-0">
-          <img src="./images/rodeo_kn.png" alt="" class="w-[15vw] lg:w-[20vw] animasi-bawah" />
+          <img src="{{ asset('template_web/birthday_9/images/rodeo_kn.png')}}" alt="" class="w-[15vw] lg:w-[20vw] animasi-bawah" />
         </div>
       </div>
       <img
-        src="./images/loc.png"
+        src="{{ asset('template_web/birthday_9/images/loc.png')}}"
         alt=""
         class="w-[4vw] mt-[7vw] mx-auto lg:w-[5vw]"
       />
       <div class="flex justify-between items-center">
         <div class="w-[30vw]">
-          <img src="./images/rodeo_sepatu.png" alt="" class="w-[15vw] lg:w-[20vw] spin-loop" />
+          <img src="{{ asset('template_web/birthday_9/images/rodeo_sepatu.png')}}" alt="" class="w-[15vw] lg:w-[20vw] spin-loop" />
         </div>
         <div class="text-center">
           <!-- <p class="text-[#975daf] text-[8vw] lg:text-[2vw] fredoka">
@@ -426,12 +431,12 @@
       <div class="text-center mt-[12vw] relative">
       
         <img
-          src="./images/rodeo_bg.png"
+          src="{{ asset('template_web/birthday_9/images/rodeo_bg.png')}}"
           alt=""
           class="w-[100vw]  mx-auto"
           />
           <img
-          src="./images/rodeo_dor.png"
+          src="{{ asset('template_web/birthday_9/images/rodeo_dor.png')}}"
           alt=""
           class="w-[30vw] absolute top-0 right-0 left-0 mx-auto animasi-gerak2"
           />
@@ -445,42 +450,42 @@
         <div class="flex gap-5 animate-marquee">
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/1.jpeg"
+            src="{{ asset('template_web/birthday_9/images/1.jpeg')}}"
             alt="Image 1"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/2.jpeg"
+            src="{{ asset('template_web/birthday_9/images/2.jpeg')}}"
             alt="Image 2"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/3.jpeg"
+            src="{{ asset('template_web/birthday_9/images/3.jpeg')}}"
             alt="Image 3"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/4.jpeg"
+            src="{{ asset('template_web/birthday_9/images/4.jpeg')}}"
             alt="Image 4"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/5.jpeg"
+            src="{{ asset('template_web/birthday_9/images/5.jpeg')}}"
             alt="Image 5"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/6.jpeg"
+            src="{{ asset('template_web/birthday_9/images/6.jpeg')}}"
             alt="Image 6"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/7.jpeg"
+            src="{{ asset('template_web/birthday_9/images/7.jpeg')}}"
             alt="Image 6"
           />
           <img
             class="w-52 object-cover rounded-lg"
-            src="./images/8.jpeg"
+            src="{{ asset('template_web/birthday_9/images/8.jpeg')}}"
             alt="Image 6"
           />
         </div>
@@ -509,7 +514,8 @@
           class="w-full mt-5 lg:w-[20vw] mx-auto"
         /> -->
       <div class="flex bg-[#a54c1a] px-[6vw] py-[4vw]">
-        <form action="">
+        <form action="/api/guest-message" method="post">
+          @csrf	
           <div>
             <p class="text-white text-[8vw] lg:text-[2vw] lilita">Name:</p>
             <div class="flex relative">
@@ -532,13 +538,13 @@
             <p class="text-white text-[8vw] lg:text-[2vw] lilita">
               Wishes:
             </p>
-            <input
+            <textarea
               type="text"
-              name="wishes"
+              name="message"
               id="wishes"
               class="w-full px-[2vw] py-[3vw] lg:py-[1vw] bg-transparent border b-2 border-white text-white text-[5vw] lg:text-[2vw] lilita"
               placeholder="Wishes"
-            />
+            ></textarea>
           </div>
 
           <div class="mt-[3vw]" id="attendanceDiv">
@@ -548,7 +554,7 @@
             <div class="flex relative">
               <select
                 type="text"
-                name="attendance"
+                name="status"
                 id="attendance"
                 class="w-full px-[2vw] py-[3vw] lg:py-[1vw] bg-transparent border b-2 border-white text-white text-[5vw] lg:text-[2vw] lilita"
                 placeholder="Nama"
@@ -570,8 +576,8 @@
             <div class="flex relative">
               <select
                 type="text"
-                name="numberPerson"
-                id="numberPerson"
+                name="number"
+                id="number"
                 class="w-full px-[2vw] py-[3vw] lg:py-[1vw] bg-transparent border b-2 border-white text-white text-[5vw] lg:text-[2vw] lilita"
                 placeholder="Nama"
               >
@@ -585,18 +591,47 @@
           </div>
 
           <button
+          type="submit"
             class="bg-[#683201] px-5 py-2 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto lilita text-white rounded-full"
           >
             Send
           </button>
         </form>
         <img
-          src="./images/rodeo_kaktus.png"
+          src="{{ asset('template_web/birthday_9/images/rodeo_kaktus.png')}}"
           alt=""
           class="w-[24vw] mt-auto lg:w-[20vw] object-contain mx-auto"
         />
       </div>
+      <div class="pesan mt-[7vw] px-[6vw]">
+        <!-- List Pesan  -->
+        @foreach ($message->sortByDesc('created_at') as $m)
+    <div class="border-t border-[#76379d] py-[3vh]">
+        <div class="flex items-center justify-between">
+            <div>
+                <p class="text-[5vw] text-[#76379d] lilita">{{ $m->nama }}</p>
+                <p class="text-[3.5vw] text-[#76379d] lilita">
+    {{ $m->number == 0 ? '' : $m->number . ' Person' }}
+</p>
 
+                
+            </div>
+            <div class="bg-[#76379d] rounded-md px-[5vw] py-[1vh]">
+                <p class="text-[4vw] text-white lilita capitalize text-center">
+                    {{ $m->status }}
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="text-[#76379d] text-[4vw] mt-[3vh]">{{ $m->message }}</p>
+        </div>
+    </div>
+@endforeach
+
+        <!-- List Pesan  -->
+
+        <!-- END -->
+      </div>
       <div class="pt-[5vw] text-center ">
         <p class="text-[#c56b33] text-[4vw] lg:text-[2vw] rye">
           Created by:
@@ -604,17 +639,17 @@
         </p>
         <div class="flex justify-between items-center mt-[10vw]">
           <img
-          src="./images/sapi.gif"
+          src="{{ asset('template_web/birthday_9/images/sapi.gif')}}"
           alt=""
           class="w-[40vw] mt-auto lg:w-[20vw] ml-[-10vw]  object-contain mx-auto"
         />
         <img
-          src="./images/rodeo_tengah.png"
+          src="{{ asset('template_web/birthday_9/images/rodeo_tengah.png')}}"
           alt=""
           class="w-[20vw] mt-auto lg:w-[20vw] object-contain mx-auto animasi-gerak"
         />
         <img
-          src="./images/arah.gif"
+          src="{{ asset('template_web/birthday_9/images/arah.gif')}}"
           alt=""
           class="w-[40vw] mt-auto mr-[-10vw] lg:w-[20vw] object-contain mx-auto"
         />
@@ -661,6 +696,51 @@
           content.classList.remove("hidden"); // Tampilkan div content
         });
       });
+    </script>
+     <script>
+      function startCountdown(endDate) {
+        // Set the date we're counting down to
+        var countDownDate = new Date(endDate).getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the corresponding elements
+          document.getElementById("day").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          // If the count down is finished, display a message
+          // if (distance < 0) {
+          // 	clearInterval(x);
+          // 	document.getElementById("countdown").innerHTML = "EXPIRED";
+          // }
+        }, 1000); // Update every 1 second
+      }
+
+      // Start the countdown on page load
+      window.onload = function () {
+        var endDate = "{{ $data->tgl }}"; // Replace with your end date
+        startCountdown(endDate);
+      };
+      function openInv() {
+        var audio = document.getElementById("musicplayer");
+        audio.play();
+      }
     </script>
   </body>
 </html>
